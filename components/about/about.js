@@ -1,10 +1,10 @@
 import React from 'react'
-import './projects.scss';
+import './about.scss';
 
 const Projects = () => {
     return (
         <div className="contact">
-            <div className="heading"><b>MY PROJECTS</b></div>
+            <div className="heading"><b>ABOUT</b></div>
             <article className="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, reprehenderit sed voluptates culpa minima iste velit adipisci illo libero odio, d</article>
         </div>
     )

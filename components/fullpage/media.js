@@ -6,6 +6,8 @@ import Lettering from "../lettering/lettering";
 import Background from "../background/background";
 import Content from "../content/content";
 import ContactPage from '../contact/contact'
+import HomePage from '../home/home'
+import AboutPage from '../about/about'
 import ProjectsPage from '../projects/projects'
 import Mouse from "../mouse/mouse";
 import Section from "../section/section";
@@ -15,36 +17,15 @@ import "./fullpage.css";
 export const Home = withNavigationContext(({ fullpage }) => {
   return (
     <Section wrapper={false} backgroundColor="#0f0e17">
-      <Content
-        main={
-          <Lettering
-            title="Welcome"
-            text={[
-              "Hi, Welcome to my portfolio. I am Garvit Galgat, a Full - Stack Developer.",
-            ]}
-          />
-        }
-        action={
-          <div className="button">
-            <AwesomeButton
-              size="large"
-              onPress={() => {
-                fullpage.navigate("/about");
-              }}
-            >
-              Goto the next page
-            </AwesomeButton>
-          </div>
-        }
-      />
+      <HomePage />
     </Section>
   );
 });
 
-export const Contact = withNavigationContext(({ fullpage }) => {
+export const About = withNavigationContext(({ fullpage }) => {
   return (
-    <Section wrapper={true} backgroundColor="#0f0e17">
-      <ContactPage />
+    <Section wrapper={false} backgroundColor="#0f0e17">
+      <AboutPage />
     </Section>
 
   );
@@ -59,48 +40,34 @@ export const Projects = withNavigationContext(({ fullpage }) => {
   );
 });
 
+export const Contact = withNavigationContext(({ fullpage }) => {
+  return (
+    <Section wrapper={false} backgroundColor="#0f0e17">
+      <ContactPage />
+    </Section>
+
+  );
+});
+
+
 export const media = [
   {
     slug: "",
-    className: "slide page-one",
+    className: "",
     children: <Home />
   },
   {
     slug: "about",
-    className: "sectioned page-two",
-    children: (
-      <Page>
-        <Section wrapper={false} backgroundColor="#0f0e17">
-          <Content
-            main={
-              <Lettering
-                title="ABOUT ME"
-                text={[
-                  "orem Ipsum is simply dummy text of the printin ustry's standard dummy text ever sine a type"
-                ]}
-              />
-            }
-            action={<Mouse />}
-          />
-        </Section>
-        <Section backgroundColor="#0f0e17">
-          <Lettering
-            title="PAGE-SECTION"
-            text={["This is a continued page section."]}
-          />
-        </Section>
-      </Page>
-    )
+    className: "",
+    children: <About />
   },
   {
     slug: "projects",
-    // preload: ["https://caferati.me/images/series/bojack-0.png"],
     className: "",
     children: <Projects />
   },
   {
     slug: "contact",
-    // preload: ["https://caferati.me/images/series/bojack-0.png"],
     className: "",
     children: <Contact />
   }
