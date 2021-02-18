@@ -6,7 +6,9 @@ import {
 import "./nav.scss";
 
 const Nav = withNavigationContext(({ fullpage }) => {
-  const { slug } = fullpage.navigation;
+  let { slug } = fullpage.navigation;
+  if (slug.substring(0, 8) == "projects")
+    slug = "projects"
 
   return (
     <header className="page-header">

@@ -88,6 +88,16 @@ export const media = [
     children: <Test1 />
   },
   {
+    slug: "projects/test2",
+    className: "",
+    children: <Test1 />
+  },
+  {
+    slug: "projects/test3",
+    className: "",
+    children: <Test1 />
+  },
+  {
     slug: "contact",
     className: "",
     children: <Contact />
