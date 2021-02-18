@@ -1,18 +1,11 @@
 import React from "react";
-import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/themes/theme-c137.css";
 import { withNavigationContext } from "react-awesome-slider/dist/navigation";
-import Lettering from "../lettering/lettering";
-import Background from "../background/background";
-import Content from "../content/content";
 import ContactPage from '../contact/contact'
 import HomePage from '../home/home'
-import TechstackPage from '../techstack/techstack'
-import AboutPage from '../about/about'
 import ProjectsPage from '../projects/projects'
-import Mouse from "../mouse/mouse";
 import Section from "../section/section";
-import Page from "../page/page";
+import AboutPage from '../about/index'
 import "./fullpage.css";
 
 import Test1Page from '../projects/test1/test1'
@@ -27,14 +20,9 @@ export const Home = withNavigationContext(({ fullpage }) => {
 
 export const About = withNavigationContext(({ fullpage }) => {
   return (
-    <Page>
-      <Section wrapper={false} backgroundColor="#0f0e17">
-        <AboutPage />
-      </Section>
-      <Section backgroundColor="#0f0e17">
-        <TechstackPage />
-      </Section>
-    </Page>
+    <Section wrapper={false} backgroundColor="#0f0e17">
+      <AboutPage />
+    </Section>
   );
 });
 

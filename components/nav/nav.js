@@ -46,6 +46,8 @@ const Nav = withNavigationContext(({ fullpage }) => {
           </Link>
         </nav>
       </div>
+      <hr style={{ border: '0.1px solid #ff8906' }} />
+
     </header>
   );
 });

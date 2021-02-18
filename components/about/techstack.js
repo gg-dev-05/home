@@ -12,9 +12,6 @@ import { SiHeroku } from 'react-icons/si'
 import { GrMysql } from 'react-icons/gr'
 import { SiMongodb } from 'react-icons/si'
 const Techstack = () => {
-    useEffect(() => {
-        console.log(document.body.scrollTop);
-    })
     return (
         <div className="techstack">
             <div className="heading"><b>STACK</b></div>
