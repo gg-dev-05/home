@@ -12,3 +12,25 @@
 .body {
     color: #a7a9be;
 }
+
+.container {
+    margin: 3%;
+    color: #f25f4c;
+    display: flex;
+    flex-direction: column;
+    .row:nth-child(1) {
+        margin-top: 5%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .title {
+        color: #ff8906;
+        font-size: 2rem;
+    }
+    .logos {
+        font-size: 5rem;
+    }
+}

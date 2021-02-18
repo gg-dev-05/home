@@ -2,7 +2,7 @@ import React from 'react'
 import Mouse from '../mouse/mouse'
 import './about.scss';
 
-const Projects = () => {
+const About = () => {
     return (
         <div className="about">
             <div className="heading"><b>ABOUT</b></div>
@@ -14,4 +14,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default About
