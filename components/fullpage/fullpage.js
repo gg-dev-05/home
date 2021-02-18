@@ -17,8 +17,8 @@ const Slider = withNavigationHandlers(AwesomeSlider);
 export default withNavigationContext(({ fullpage }) => {
   const isFirstLoad = useRef(true);
   let animation = 'scaleOutAnimation';
-  if (fullpage.navigation.slug.substring(0, 8) == "projects")
-    animation = 'fallAnimation'
+  if (fullpage.navigation.slug.substring(0, 8) === "projects" || fullpage.navigation.slug === "")
+    animation = 'openAnimation'
 
   return (
     <Slider
