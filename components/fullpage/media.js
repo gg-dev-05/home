@@ -7,12 +7,15 @@ import Background from "../background/background";
 import Content from "../content/content";
 import ContactPage from '../contact/contact'
 import HomePage from '../home/home'
+import TechstackPage from '../techstack/techstack'
 import AboutPage from '../about/about'
 import ProjectsPage from '../projects/projects'
 import Mouse from "../mouse/mouse";
 import Section from "../section/section";
 import Page from "../page/page";
 import "./fullpage.css";
+
+import Test1Page from '../projects/test1/test1'
 
 export const Home = withNavigationContext(({ fullpage }) => {
   return (
@@ -24,10 +27,14 @@ export const Home = withNavigationContext(({ fullpage }) => {
 
 export const About = withNavigationContext(({ fullpage }) => {
   return (
-    <Section wrapper={false} backgroundColor="#0f0e17">
-      <AboutPage />
-    </Section>
-
+    <Page>
+      <Section wrapper={false} backgroundColor="#0f0e17">
+        <AboutPage />
+      </Section>
+      <Section backgroundColor="#0f0e17">
+        <TechstackPage />
+      </Section>
+    </Page>
   );
 });
 
@@ -49,6 +56,15 @@ export const Contact = withNavigationContext(({ fullpage }) => {
   );
 });
 
+export const Test1 = withNavigationContext(({ fullpage }) => {
+  return (
+    <Section wrapper={false} backgroundColor="#0f0e17">
+      <Test1Page />
+    </Section>
+
+  );
+});
+
 
 export const media = [
   {
@@ -65,6 +81,11 @@ export const media = [
     slug: "projects",
     className: "",
     children: <Projects />
+  },
+  {
+    slug: "projects/test1",
+    className: "",
+    children: <Test1 />
   },
   {
     slug: "contact",
