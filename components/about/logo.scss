@@ -1,0 +1,21 @@
+.logo-box{
+    transition: all 0.8s;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon{
+        padding-bottom: 0;
+    }
+    .name{
+        font-size: 0;
+        transition: all 0.2s ease-in-out;
+    }
+}
+.logo-box:hover{
+    color: #f25f4c;
+    .name{
+        margin-left: 4px;
+        font-size: 1.2rem;
+    }
+}
