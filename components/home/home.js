@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './home.scss';
 
 const Projects = () => {
+    useEffect(() => {
+        document.title = "GG | Home"
+    }, []);
     return (
         <div className="home">
             <div className="heading"><b>HOME</b></div>

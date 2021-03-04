@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './projects.scss';
 import { Link } from 'react-awesome-slider/dist/navigation'
 
 const Projects = () => {
+    useEffect(() => {
+        document.title = "GG | Projects"
+    }, []);
     return (
         <div className="projects">
             <div className="heading"><b>MY PROJECTS</b></div>

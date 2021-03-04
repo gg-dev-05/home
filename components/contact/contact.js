@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './contact.scss';
 import { AwesomeButton } from 'react-awesome-button'
 
 const contact = () => {
+    useEffect(() => {
+        document.title = "GG | Contact"
+    }, []);
     return (
         <div className="contact">
             <div className="heading"><b>CONTACT ME</b></div>

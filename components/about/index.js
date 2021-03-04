@@ -6,13 +6,10 @@ import Techstack from './techstack';
 import './about.scss';
 
 const AboutPage = () => {
-    const handleScroll = () => {
-        console.log("SCROLL");
-    }
+
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    });
+        document.title = "GG | About"
+    }, []);
     return (
         <Page>
             <Section wrapper={false} backgroundColor="#0f0e17">

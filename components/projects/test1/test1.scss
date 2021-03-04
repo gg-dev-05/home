@@ -1,3 +1,17 @@
+.aws-btn {
+
+    --button-default-border-radius: 2px;
+    --button-raise-level: 3px;
+    --button-hover-pressure: 1.5;
+    --transform-speed: 0.185s;
+    --button-primary-color: #ff8906;
+    --button-primary-color-dark: #0f0e17;
+    --button-primary-color-light: #fff; 
+    --button-primary-color-hover: #f25f4c;
+    margin-top: 18px;
+
+}
+
 .test1 {
     font-family: Montserrat, tahoma, verdana, sans-serif;
     margin: 120px
