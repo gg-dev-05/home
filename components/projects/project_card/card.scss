@@ -4,4 +4,21 @@
   border: 1px solid red;
   flex: 0 1 400px;
   margin: 1em;
+  overflow: hidden;
+  .front_image_frame {
+    top: -200%;
+    height: 600px;
+    background: transparent;
+    z-index: 2;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      top: -100%;
+    }
+  }
+
+  .back_image {
+    position: relative;
+    z-index: 1;
+  }
 }
