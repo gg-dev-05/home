@@ -12,9 +12,6 @@ const AboutPage = () => {
     }, []);
     return (
         <Page>
-            <Section wrapper={false} backgroundColor="#0f0e17">
-                <About />
-            </Section>
             <Section backgroundColor="#0f0e17">
                 <Techstack />
             </Section>

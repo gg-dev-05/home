@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="about">
             <div className="heading"><b>ABOUT</b></div>
-            <article className="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, reprehenderit sed voluptates culpa minima iste velit adipisci illo libero odio, d</article>
+            <article className="body">Scroll down to see the technologies I am familiar with</article>
             <div className="mouse">
                 <Mouse />
             </div>

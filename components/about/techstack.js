@@ -17,7 +17,7 @@ const Techstack = () => {
     return (
         <div className="techstack">
             <div className="heading"><b>STACK</b></div>
-            <article className="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, reprehenderit sed voluptates culpa minima iste velit adipisci illo libero odio, d</article>
+            <article className="body">Following are the technologies I have worked with</article>
             <div className="container">
                 <div className="row-stack">
                     <div className="title">FRONT END </div>

@@ -1,37 +1,43 @@
 .techstack {
-    font-family: Montserrat, tahoma, verdana, sans-serif;
-    margin: 120px
+  font-family: Montserrat, tahoma, verdana, sans-serif;
+  margin: 120px;
 }
 
 .heading {
-    color: #ff8906;
-    font-size: 2.2rem;
-    display: block;
+  color: #ff8906;
+  font-size: 2.2rem;
+  display: block;
 }
 
 .body {
-    color: #a7a9be;
+  color: #a7a9be;
 }
 
 .container {
-    margin: 3%;
-    color: #a7a9be;
+  margin: 3%;
+  color: #a7a9be;
+  display: flex;
+  flex-direction: column;
+  .row-stack:nth-child(1) {
+    margin-top: 5%;
+  }
+  .row-stack {
     display: flex;
     flex-direction: column;
-    .row-stack:nth-child(1) {
-        margin-top: 5%;
-    }
-    .row-stack {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5%;
-    }
-    .title {
-        color: #ff8906;
-        font-size: 2rem;
-    }
+    margin-bottom: 5%;
+  }
+  .title {
+    color: #ff8906;
+    font-size: 2rem;
+  }
+  .logos {
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  @media all and (min-width: 768px) {
     .logos {
-        font-size: 5rem;
-        display: flex;
+      flex-direction: row;
     }
+  }
 }

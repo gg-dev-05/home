@@ -8,6 +8,7 @@ const Projects = () => {
     const openMERN = () => {
         window.location = "https://www.educative.io/edpresso/what-is-mern-stack"
     }
+    
     return (
         <div className="home">
             <div className="heading"><b>HOME</b></div>
