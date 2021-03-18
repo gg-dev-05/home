@@ -1,19 +1,31 @@
 import React, { useEffect } from 'react'
 import './projects.scss';
 import { Link } from 'react-awesome-slider/dist/navigation'
+import {Card} from './project_card/card'
+import Page from '../page/page';
+import Section from '../section/section';
 
 const Projects = () => {
     useEffect(() => {
         document.title = "GG | Projects"
     }, []);
     return (
-        <div className="projects">
-            <div className="heading"><b>MY PROJECTS</b></div>
-            <article className="body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, reprehenderit sed voluptates culpa minima iste velit adipisci illo libero odio, d</article>
-            <Link href="/projects/test1">
-                HOME
-          </Link>
-        </div>
+        <Page>
+            <Section backgroundColor="#0f0e17">
+            <div className="projects">
+                <div className="heading"><b>MY PROJECTS</b></div>
+                <article className="body">Here are some of my projects</article>
+                <div className="projects_list">
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                </div>
+            </div>
+            </Section>
+        </Page>
+        
     )
 }
 
