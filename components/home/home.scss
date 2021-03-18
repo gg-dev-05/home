@@ -1,14 +1,55 @@
 .home {
-    font-family: Montserrat, tahoma, verdana, sans-serif;
-    margin: 120px
+  font-family: Montserrat, tahoma, verdana, sans-serif;
+  margin: 120px;
 }
 
 .heading {
-    color: #ff8906;
-    font-size: 2.2rem;
-    display: block;
+  color: #ff8906;
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 1em;
 }
 
 .body {
-    color: #a7a9be;
+  color: #a7a9be;
+  font-size: 1.5rem;
+  .name {
+    font-size: 4em;
+    margin: 0 0.3rem;
+  }
+  .spacing__hover {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.small {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 1em;
+  animation: blink 2s infinite;
+  display: none;
+}
+
+@keyframes blink {
+  0% {
+    color: rgba($color: #fff, $alpha: 1);
+  }
+  50% {
+    color: rgba($color: #fff, $alpha: 0);
+  }
+  100% {
+    color: rgba($color: #fff, $alpha: 1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .small {
+    display: flex;
+  }
 }
