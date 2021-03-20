@@ -16,11 +16,11 @@ const Projects = () => {
                 <div className="heading"><b>MY PROJECTS</b></div>
                 <article className="body">Here are some of my projects</article>
                 <div className="projects_list">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <Link href="/projects/test1"><Card/></Link>
+                    <Link href="/projects/test2"><Card/></Link>
+                    <Link href="/projects/test1"><Card/></Link>
+                    <Link href="/projects/test1"><Card/></Link>
+                    <Link href="/projects/test1"><Card/></Link>
                 </div>
             </div>
             </Section>
